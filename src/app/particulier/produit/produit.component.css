@@ -1,0 +1,5 @@
+section{
+    height: 180vh;
+    background: linear-gradient(to right top, #105043, #1F9F78);
+    clip-path: polygon(0 0, 100% 10%, 100% 85%, 0% 95%);
+}

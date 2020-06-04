@@ -1,22 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { HostListener } from '@angular/core';
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css']
 })
-export class AppComponent {
-  faFacebookF = faFacebookF;
-  faInstagram = faInstagram;
-  faYoutube = faYoutube;
-  faLinkedinIn = faLinkedinIn;
+export class NavbarComponent implements OnInit {
+
   faSearch = faSearch;
   faShoppingCart = faShoppingCart;
   constructor() { }

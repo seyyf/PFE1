@@ -1,0 +1,44 @@
+h1{
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    color: #f2d349;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    margin-left: 10px;
+}
+
+.tirer{
+    width: 175px;
+    height: 0px;
+    background: transparent;
+    border: 2px solid #eec643;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.5));
+    margin-left: 10px;
+}
+
+.row p {
+    color: white;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.karousel-inner{
+    width: 800px;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 165px;
+    border-radius: 20px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+    border-color: #f2d349;
+    border-width: 8px;
+}
+
+fa-icon{
+    color: #f2d349;
+}

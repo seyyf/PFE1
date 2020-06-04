@@ -1,0 +1,26 @@
+header{
+    background: linear-gradient(to right top, #187B5D, #1F9F78);
+    clip-path : polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+}
+
+.icons{
+    position: fixed;
+    top: 50%;
+    left: 97.7%;
+    -webkit-transform: translate(50%);
+    -ms-transform: translateX(-50%);
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.icons a {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    color: white;
+    font-size: 20px;
+    background-color: #f2d349;
+    border-radius: 10px;
+  }
+
+

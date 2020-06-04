@@ -1,0 +1,73 @@
+
+.text h1{
+    position: absolute;
+    font-family: "Segoe UI";
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 120px;
+    letter-spacing: 0.25em;
+    text-align: left;
+    color: #f2d349;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+    
+}
+
+.tirer{
+    position: absolute;
+    margin-top: 170px;
+    width: 100px;
+    height: 0px;
+    border: 2px solid #eec643;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.5));
+}
+
+
+.karousel{
+    position: absolute;
+    margin-top: 240px;
+}
+
+.card{
+    width: 180px; 
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-img{
+    width: 100px;
+}
+
+.card .card-img .content{
+    font-size: 10px;
+}
+
+.col button{
+    background: #f2d349;
+    width: 180px;
+    height: 40px;
+    margin-top: 2px;
+    transition: 0.5s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.card:hover button{
+    visibility: visible;
+    opacity: 1;
+}
+
+.prix1, .prix2{
+    margin-left: 25px;
+}
+
+.tirer2{
+    position: absolute;
+    width: 100px;
+    height: 0px;
+    border: 2px solid #187B5D;
+    top: 41%;
+    margin-top: 80px;
+    transition: 0.5s;
+}

@@ -1,0 +1,145 @@
+h1{
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #f2d349;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.tirer{
+    width: 100px;
+    height: 0px;
+    background: transparent;
+    border: 2px solid #eec643;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.5));
+}
+
+.btn-produit{
+    margin-top: 20px;
+    border-radius: 4px;
+    background: #f2d349;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.24);
+    color: #1F2421;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-produit:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.btn-produit:hover:active{
+    transform: translateY(-2px);
+}
+.btn-partenaire{
+    margin: 20px 0 0 100px;
+    border-radius: 4px;
+    background: #f2d349;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.24);
+    color: #1F2421;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-partenaire:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.btn-partenaire:hover:active{
+    transform: translateY(-2px);
+}
+
+.tanjra img{
+    position: relative;
+    width: 450px;
+    top: 60px;
+    margin-left: 20px;
+}
+
+
+.karousel{
+      width: 1000px;
+      position: relative;
+      z-index: 1;
+      bottom: 100px;
+  }
+
+.karousel-inner{
+
+    width: 800px;
+}
+.cards{
+    position: relative;
+    display: flex;
+    height: 165px;
+    border-radius: 20px;
+    border-bottom: solid #f2d349 30px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.45);
+    justify-content: center;
+    align-items: center;
+}
+.image{
+    width: 80px;
+}
+
+.shape svg{
+    position: absolute;
+    right: 0;
+    top: 110px;
+    z-index: 0;
+}
+/* svg{
+    position: absolute;
+    margin: 0 auto;
+    margin-right: 20px;
+    z-index: 0;
+} */
+
+/* .texte{
+    position: absolute;
+    color: black;
+    bottom: 0;
+    margin: 0 auto;
+} */
+
+/* .minoterie{
+    position: absolute;
+    z-index: 1;
+    margin: 132px 0px 0px 43px;
+}
+
+.formagerie{
+    position: absolute;
+    z-index: 1;
+    margin: 132px 0px 0px 35px;
+}
+
+.huilerie{
+    position: absolute;
+    z-index: 1;
+    margin: 132px 0px 0px 50px;
+}
+
+.biscuiterie{
+    position: absolute;
+    z-index: 1;
+    margin: 132px 0px 0px 37px;
+} */
+
+.arrow{
+    color: #f2d349;
+    margin: 100px 0;
+}
+
+.type{
+    position: absolute;
+    margin-top: 75px;
+    z-index: 1;
+}
+

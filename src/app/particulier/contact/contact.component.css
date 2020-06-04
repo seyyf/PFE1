@@ -1,0 +1,174 @@
+container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-family: "Segoe UI";
+    font-weight: bold;
+    letter-spacing: 0.25em;
+    color: #f2d349;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.col1{
+    position: relative;
+    background: linear-gradient(to right, #187B5D, #1F9F78);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    margin-top: 35px;
+    border-radius: 9px;
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cart{
+    position: relative;
+    color: #f2d349;
+    padding: 50px;
+}
+
+h4{
+    color: #f2d349;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);    
+}
+
+.row100{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+
+.container .row100 .col{
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px;
+    transition: 0.5s;
+}
+
+.container .row100 .inputBox{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    color: black;    
+}
+
+.container .row100 .inputBox input,
+.container .row100 .inputBox.textarea textarea{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 0 10px;
+    z-index: 1;
+    color: #fff;
+}
+
+.container .row100 .inputBox .text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus + .text,
+.container .row100 .inputBox input:valid + .text{
+    top: -35px;
+    left: -10px;
+}
+
+.container .row100 .inputBox .line{
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #1F9F78;
+    transition: 0.5s;
+    border-radius: 25px;
+    pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus ~ .line,
+.container .row100 .inputBox input:valid ~ .line{
+    height: 100%;
+}
+
+.container .row100 .inputBox.textarea{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+}
+
+.container .row100 .inputBox.textarea textarea{
+    height: 100%;
+    resize: none;
+}
+
+.container .row100 .inputBox textarea:focus + .text1,
+.container .row100 .inputBox textarea:valid + .text1{
+    top: -75px;
+    left: -5px;
+}
+
+.container .row100 .inputBox textarea:focus ~ .line,
+.container .row100 .inputBox textarea:valid ~ .line{
+    height: 100%;
+}
+
+
+.container .row100 .inputBox .text1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 120px;
+    font-size: 18px;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.btn-produit{
+    margin-top: 30px;
+    border-radius: 4px;
+    background: #f2d349;
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.24);
+    color: #1F2421;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-produit:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.4);
+}
+
+.btn-produit:hover:active{
+    transform: translateY(-2px);
+}
+
+.forButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    margin-top: 20px;
+}
