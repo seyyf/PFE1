@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th>Customer</th>
+                    <th>Date</th>
+                    <th></th>
+                  </tr>
+                </thead> 
+                <tbody>
+                  <tr *ngFor="let order of orders$ | async">
+                    <td>{{ order.item }}</td>
+                    <td>{{ order.datePlaced | date}}</td>
+                    <td>
+                      <a href="">View (inactive)</a>
+                    </td>
+                  </tr>
+                </tbody> 
+              </table>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>

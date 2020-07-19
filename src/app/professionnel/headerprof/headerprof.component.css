@@ -24,3 +24,19 @@ header{
     border-radius: 10px;
 }
 
+@media only screen and (max-width: 768px) {
+    .icons{
+        left: 94%;
+    }
+    header{
+        height: 110vh;
+    }
+}
+
+
+@media only screen and (max-width: 991px) and (min-width: 769px) {
+    .icons{
+        left: 97%;
+    }
+}
+

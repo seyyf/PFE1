@@ -1,0 +1,22 @@
+<div class="card mt-5 ml-5">
+    <img class="card-img" src="assets/Photos/yaourt.png">
+        <div class="content">
+            <h4 class="text-uppercase">{{ product.titre }}</h4>
+            <p class="prix1 text-uppercase text-center"><del>{{ product.prix1 }} DT</del></p>
+            <div class="tirer2 text-center"></div>
+            <p class="text-uppercase prix2 text-center"> {{ product.prix2 }} DT</p>
+        </div>
+        <button 
+        *ngIf="shoppingCart.getQuantity(product) === 0; else updateQuantity"
+        class="btn btn-produit text-center btn-block"
+        (click)="addToCart()"
+        >
+            <fa-icon [icon]="faShoppingCart" class="cart"></fa-icon>
+            Ajouter au panier
+        </button>
+        <ng-template #updateQuantity>
+            <app-product-quantity [product]="product" [shopping-cart]="shoppingCart">
+            </app-product-quantity>
+        </ng-template>
+</div>
+

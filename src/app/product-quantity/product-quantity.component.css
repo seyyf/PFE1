@@ -1,0 +1,58 @@
+.tirer2{
+    position: absolute;
+    width: 95px;
+    height: 0px;
+    border: 2px solid #187B5D;
+    top: 5%;
+    margin-top: 60px;
+    transition: 0.5s;
+}
+
+.carousel-inner { 
+    width: 80%;
+ }
+
+ .carousel{
+     margin-top: 200px;
+ }
+.card{
+    width: 180px; 
+    height: 255px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .card-img{
+    position: relative;
+    width: 100px;
+    top: 10px;
+    transition: 0.5s;
+}
+
+.content{
+    position: relative;
+    top: 10px;
+}
+
+.content h4{
+    position: relative;
+    top: 10px;
+}
+
+.cart1{
+    font-size: 45px;
+    color: #f2d349;
+}
+
+.btn-produit{
+    background-color: #f2d349;
+}
+
+.low-button{
+    margin-right: 15px;
+}
+
+
+/****************************************************************/
+

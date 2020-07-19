@@ -1,0 +1,21 @@
+.dashboard{
+    background: linear-gradient(to right top, #187B5D, #1F9F78);
+}
+
+h1{
+    padding-top: 120px;
+    color: #F2D349;
+    font-size: 3.5em;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.8);
+    letter-spacing: 4px;
+}
+
+p{
+    color: white;
+    font-size: 1.5em;
+}
+
+.cart{
+    color: #F2D349;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+}

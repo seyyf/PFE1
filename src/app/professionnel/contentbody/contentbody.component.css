@@ -42,6 +42,13 @@ h4, p{
     margin-bottom: -250px;
 }
 
+@media only screen and (max-width: 768px) {
+    .ask-partenaire{
+        clip-path : polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+        height: 170vh;
+    }
+}
+
 .partner{
     /* margin-bottom: 525px; */
     position: relative;

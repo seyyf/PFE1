@@ -1,0 +1,52 @@
+<div class="container">
+    <ng-container *ngIf="cart$ | async as cart">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col">
+                <table class="table mt-5">
+                    <thead>
+                        <tr>
+                            <th>Produit</th>
+                            <th class="text-center" style="width: 230px;">Quantité</th>
+                            <th class="text-right" style="width: 200px;">Prix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of cart.items">
+                            <td>
+                                {{ item.product.titre }}
+                            </td>
+                            <td>
+                                <app-product-quantity [product]="item.product" [shopping-cart]="cart">
+                                </app-product-quantity>
+                            </td>
+                            <td class="text-right">{{ item.totalPrice }} DT</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                            <th class="text-right">
+                                {{ cart.totalPrice }} DT
+                            </th>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="buttons">
+                    <button
+                    *ngIf="cart.items.length" 
+                    (click)="clearCart()"
+                    class="btn btn-produit">Effacer Panier</button>
+                    <a routerLink="/check-out">
+                        <button
+                        *ngIf="cart.items.length"
+                        class="btn btn-checkOut"
+                        >Check Out</button>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </ng-container>
+</div>

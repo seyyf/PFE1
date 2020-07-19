@@ -1,0 +1,51 @@
+.btn-produit{
+    margin-top: 20px;
+    border-radius: 4px;
+    background: #f2d349;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.24);
+    color: #1F2421;
+    font-weight: normal;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-produit:hover{
+    transform: translateY(-1px);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.btn-produit:hover:active{
+    transform: translateY(-2px);
+}
+
+
+/**************/
+
+
+.btn-checkOut{
+    margin-top: 20px;
+    border-radius: 4px;
+    background: #187B5D;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.24);
+    color: white;
+    font-weight: normal;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.btn-checkOut:hover{
+    transform: translateY(-1px);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.btn-checkOut:hover:active{
+    transform: translateY(-2px);
+}
+
+.buttons{
+    display: flex;
+}
+
+a:last-of-type {
+    margin-left: auto;
+  }

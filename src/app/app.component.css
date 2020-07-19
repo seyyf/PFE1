@@ -9,12 +9,12 @@
 }
 
 .menu{
-    margin-left: 250px;
+    margin-left: 420px;
 }
 
 .nav-link{
     color: #fff !important;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 2px;
     margin: 7px;
 }
@@ -82,10 +82,17 @@
     border-radius: 20px; 
     width: 48px !important;
     height: 32px !important;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
+.badge{
+    background-color: #F2D349; 
+}
+
+.cart1{
+    
+}
 
 .navbar-inverse{
     background: rgba(0, 0, 0, 0.7);
@@ -144,4 +151,22 @@ footer{
 
 .icons ul li{
     margin: 0 5px;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 992px) {
+    .menu{
+        margin-left: 0px;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-inverse{
+     width: 30rem;
+    }
+    
 }

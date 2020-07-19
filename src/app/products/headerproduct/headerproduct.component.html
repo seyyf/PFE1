@@ -1,0 +1,18 @@
+<div class="dashboard">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text">
+                <h1 class="text-uppercase"> MINOTERIE </h1>
+            </div>
+        </div>
+    <div class="row dived-row">
+        <div class="col-md-3 col-sm-6 col-xs-12" *ngFor="let c of categories$ | async" >
+            <a routerLink="/products"
+                [queryParams]="{categories: c.$key}"
+                [class.active]="category === c.$key"
+            > 
+                <button class="btn btn-partenaire btn-block">{{ c.name }}</button>
+            </a>
+        </div>
+    </div>
+</div>

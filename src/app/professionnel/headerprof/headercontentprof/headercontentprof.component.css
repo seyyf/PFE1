@@ -42,3 +42,12 @@ h1{
 fa-icon{
     color: #f2d349;
 }
+
+@media only screen and (max-width: 768px){
+    h1{
+        margin-left: 55px;
+    }
+    .tirer{
+        margin-left: 55px;
+    }
+}

@@ -1,0 +1,173 @@
+<div class="login-page">
+    <mat-card class="mat-elevation-z12">
+      <mat-card-title style="text-align:center; font-family: Arial, Helvetica, sans-serif;" class="text-uppercase">Connexion/S'inscrire</mat-card-title>
+      <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
+        <mat-tab label="Connexion">
+            <mat-card-content>
+              <form #loginForm="ngForm" (ngSubmit)="loginn(loginForm)">
+                <div class="col-md-12">
+                  <div class="row" *ngIf="authError">
+                    <div class="col-12 alert alert-danger">
+                      {{ authError?.message}}
+                    </div>
+                  </div>
+                </div>
+                <mat-form-field>
+                  <input
+                    matInput
+                    placeholder="Email"
+                    required
+                    name="email"
+                    ngModel
+                    #email="ngModel">
+                    <mat-error *ngIf="email.invalid">Email est necéssaire</mat-error>
+                  <mat-icon matSuffix>email</mat-icon>
+                </mat-form-field>
+                <mat-form-field>
+                  <input
+                    matInput
+                    placeholder="Mot de passe"
+                    type="password"
+                    required
+                    minlength="6"
+                    name="password"
+                    ngModel
+                    #password="ngModel">
+                    <mat-error
+                      *ngIf="password.errors && password.errors.required">
+                      Mot de passe est nécessaire
+                    </mat-error>
+                    <mat-error
+                      *ngIf="password.errors && password.errors.minlength">
+                        Le mot de passe doit être de longueur 6 caractéres 
+                    </mat-error>
+                  <mat-icon matSuffix>lock</mat-icon>
+                </mat-form-field>
+                <button
+                  mat-raised-button
+                  color="primary"
+                  class="login-button">
+                  <span style="color: black;" class="text-uppercase">Se connecter</span>
+                </button>
+  
+                <button
+                  (click)="login()"
+                  mat-raised-button
+                  class="login-button" style="background-color: #F2D349;">
+                  Se connecter avec <fa-icon [icon]="faGoogle" class="cart"></fa-icon>
+                </button>
+                <button
+                  (click)="loginWithFacebook()"
+                  mat-raised-button
+                  class="login-button" style="background-color: #F2D349;">
+                  Se connecter avec <fa-icon [icon]="faFacebookF" class="cart"></fa-icon>
+                </button>
+              </form>
+            </mat-card-content>
+        </mat-tab>
+        <mat-tab label="s'inscrire">
+          <div class="col-md-12">
+            <div class="row" *ngIf="authError">
+              <div class="col-12 alert alert-danger">
+                {{ authError?.message}}
+              </div>
+            </div>
+          </div>
+          <mat-card-content>
+            <form #userRegForm="ngForm" (ngSubmit)="createUser(userRegForm)">
+              <mat-form-field>
+                <input
+                  matInput
+                  placeholder="Nom"
+                  required
+                  name="firstName"
+                  ngModel
+                  #username="ngModel">
+                <mat-icon matSuffix>perm_identity</mat-icon>
+                <mat-error
+                  *ngIf="username.invalid">
+                  votre nom est nécessaire
+                </mat-error>
+  
+              </mat-form-field>
+              <mat-form-field>
+                <input
+                  matInput
+                  placeholder="Prénom"
+                  required
+                  name="lastName"
+                  ngModel
+                  #username="ngModel">
+                <mat-icon matSuffix>perm_identity</mat-icon>
+                <mat-error
+                  *ngIf="username.invalid">
+                  votre prénom est nécessaire
+                </mat-error>
+  
+              </mat-form-field>
+              <mat-form-field>
+                <input
+                  matInput
+                  placeholder="Email"
+                  required
+                  name="email"
+                  ngModel
+                  #email="ngModel">
+                  <mat-error *ngIf="email.invalid">Email est nécessaire</mat-error>
+                <mat-icon matSuffix>email</mat-icon>
+              </mat-form-field>
+              <mat-form-field>
+                <input
+                  matInput
+                  placeholder="Adresse"
+                  required
+                  name="adresse"
+                  ngModel
+                  #email="ngModel">
+                  <mat-error *ngIf="email.invalid">veuillez tapez votre adresse</mat-error>
+                <mat-icon matSuffix> location_on</mat-icon>
+              </mat-form-field>
+              <mat-form-field>
+                <input
+                  matInput
+                  placeholder="Adresse 2"
+                  name="adresse"
+                  ngModel
+                  #email="ngModel">
+                  <mat-error *ngIf="email.invalid">veuillez tapez votre adresse</mat-error>
+                <mat-icon matSuffix> location_on</mat-icon>
+              </mat-form-field>
+              <mat-form-field>
+                <input
+                  matInput
+                  placeholder="Password"
+                  type="password"
+                  required
+                  minlength="6"
+                  name="password"
+                  ngModel
+                  #password="ngModel">
+                  <mat-error
+                    *ngIf="password.errors && password.errors.required">
+                    Password est necéssaire
+                  </mat-error>
+                  <mat-error
+                    *ngIf="password.errors && password.errors.minlength">
+                    Le mot de passe doit être de longueur 6 caractéres
+                  </mat-error>
+                <mat-icon matSuffix>lock</mat-icon>
+  
+              </mat-form-field>
+              <button
+                mat-raised-button
+                color="primary"
+                class="login-button">
+                <span style="color: black;" class="text-uppercase">s'inscrire</span>
+              </button>
+            </form>
+          </mat-card-content>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card>
+  </div>
+  

@@ -1,9 +1,3 @@
-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 h1{
     font-family: "Segoe UI";
     font-weight: bold;
@@ -144,22 +138,23 @@ h4{
 }
 
 .btn-produit{
-    margin-top: 30px;
+    margin: 20px 0 0 0px;
     border-radius: 4px;
     background: #f2d349;
-    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.24);
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.24);
     color: #1F2421;
     font-weight: bold;
     letter-spacing: 1px;
     transition: 0.3s;
+    width: 200px;
 }
 
-.btn-produit:hover{
-    transform: translateY(-5px);
-    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.4);
+.btn-partenaire:hover{
+    transform: translateY(-1px);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.4);
 }
 
-.btn-produit:hover:active{
+.btn-partenaire:hover:active{
     transform: translateY(-2px);
 }
 
@@ -171,4 +166,10 @@ h4{
 
 .contact{
     margin-top: 20px;
+}
+
+@media only screen and (max-width: 768px){
+    .container{
+        margin-top: -350px;
+    }
 }

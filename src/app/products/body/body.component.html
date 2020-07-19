@@ -1,0 +1,10 @@
+<div class="container">
+        <div class="row">
+        <ng-container *ngFor="let p of filteredProducts; let i = index" >
+            <div class="col-md-3 col-sm-6">
+                <app-card-product [product]="p" [shopping-cart]="cart"></app-card-product>
+            </div>
+            <div *ngIf="(i+1) % 4 === 0" class="w-100"></div>
+        </ng-container>
+    </div>
+</div>

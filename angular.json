@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "PFE1": {
@@ -24,11 +24,13 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "./node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
             ],
             "scripts": [
-              
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {
@@ -68,7 +70,7 @@
             "browserTarget": "PFE1:build"
           },
           "configurations": {
-            "production": {
+            "production": { 
               "browserTarget": "PFE1:build:production"
             }
           }
@@ -122,6 +124,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "PFE1"
 }

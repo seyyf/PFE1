@@ -1,5 +1,18 @@
 section{
-    height: 180vh;
+    height: 170vh;
     background: linear-gradient(to right top, #105043, #1F9F78);
     clip-path: polygon(0 0, 100% 10%, 100% 85%, 0% 95%);
+}
+
+@media only screen and (max-width: 768px) {
+    section{
+        height: 480vh;
+        clip-path: polygon(0 0, 100% 3%, 100% 85%, 0% 88%);
+    }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+    section{
+        height: 230vh;
+    }
 }
